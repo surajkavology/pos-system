@@ -1,7 +1,12 @@
 import React from 'react'
+import SidebarMenu from '../Components/SidebarMenu'
 
-export const Settings = () => {
+const Settings = () => {
   return (
-    <div>Settings</div>
+    <>
+    <SidebarMenu/>
+    </>
   )
 }
+
+export default Settings

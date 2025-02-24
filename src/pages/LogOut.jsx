@@ -1,7 +1,12 @@
 import React from 'react'
+import Login from './Login'
 
-export const LogOut = () => {
+const LogOut = () => {
   return (
-    <div>LogOut</div>
+    <>
+    <Login/>
+    </>
   )
 }
+
+export default LogOut

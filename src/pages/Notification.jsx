@@ -1,8 +1,13 @@
 import React from 'react'
+import SidebarMenu from '../Components/SidebarMenu'
 
 const Notification = () => {
   return (
-    <div>Notification</div>
+    <>
+    <div className='flex'>
+    <SidebarMenu/>
+    </div>
+    </>
   )
 }
 

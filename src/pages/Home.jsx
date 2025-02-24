@@ -1,14 +1,16 @@
 import React from 'react'
 import SidebarMenu from '../Components/SidebarMenu'
+import MainArea from '../Components/MainArea'
 
-const OrderView = () => {
+const Home = () => {
   return (
     <>
-    <div className='flex'>
+    <div className='mainarea flex'>
       <SidebarMenu/>
+      <MainArea/>
     </div>
     </>
   )
 }
 
-export default OrderView
+export default Home

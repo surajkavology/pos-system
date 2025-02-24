@@ -1,8 +1,11 @@
 import React from 'react'
+import SidebarMenu from '../Components/SidebarMenu'
 
 const ManageItems = () => {
   return (
-    <div>ManageItems</div>
+    <>
+    <SidebarMenu/>
+    </>
   )
 }
 
