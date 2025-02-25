@@ -17,7 +17,7 @@ const SidebarMenu = () => {
   const activeIndex = menuItems.findIndex(menu => menu.path === location.pathname);
 
   return (
-    <div className='slidebar-menu px-[50px] py-16 fixed top-0 left-0 bottom-0 w-[300px] shadow-2xl'>
+    <div className='slidebar-menu px-[50px] py-16 fixed top-0 left-0 bottom-0 w-[300px] shadow-2xl overflow-auto'>
       <div className='site-logo mb-6'>
         <Link to={"/"} className='mb-16 block'>
           <img src={siteLogo} alt="site-logo" className='max-w-[150px] m-auto' />
