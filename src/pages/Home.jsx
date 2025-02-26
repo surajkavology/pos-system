@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import SidebarMenu from '../Components/SidebarMenu'
 import Userbar from '../Components/Userbar'
 import AboutInfoCardWrap from '../Components/AboutInfoCardWrap'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import UserCard from "../Components/UserCard";
+
 
 const Home = () => {
  
@@ -32,6 +35,19 @@ const Home = () => {
             </tbody>
           </table>
         </div>
+
+        <Tabs defaultValue="account" className="w-full">
+  <TabsList>
+    <TabsTrigger value="account">Account</TabsTrigger>
+    <TabsTrigger value="password">Password</TabsTrigger>
+  </TabsList>
+  <TabsContent value="account">
+    <UserCard/>
+  </TabsContent>
+  <TabsContent value="password">Change your password here.</TabsContent>
+</Tabs>
+
+
     </div>
 
     </div>
