@@ -18,14 +18,14 @@ const Home = () => {
 
 
           <Tabs defaultValue="account" className="w-full mt-14">
-            <TabsList className='w-full flex gap-8 p-0 h-auto'>
+            <TabsList className='w-full flex gap-8 p-0 h-auto bg-transparent'>
               <TabsTrigger value="account"  className="w-[50%] block p-4 shadow-2xl cursor-pointer rounded-10 bg-white text-bold text-xl text-black data-[state=active]:bg-theme data-[state=active]:text-white">Latest Orders</TabsTrigger>
               <TabsTrigger value="password"  className="w-[50%] block p-4 shadow-2xl cursor-pointer rounded-10 bg-white text-bold text-xl text-black data-[state=active]:bg-theme data-[state=active]:text-white">Top Selling</TabsTrigger>
             </TabsList>
-            <TabsContent value="account">
+            <TabsContent value="account" className="bg-white p-6 rounded-10 mt-6">
               <UserCard/>
             </TabsContent>
-            <TabsContent value="password">Change your password here.</TabsContent>
+            <TabsContent value="password" className="bg-white p-6 rounded-10 mt-6">Change your password here.</TabsContent>
           </Tabs>
     </div>
     
