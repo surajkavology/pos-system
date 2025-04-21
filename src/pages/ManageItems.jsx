@@ -1,15 +1,12 @@
 import React from 'react'
-import SidebarMenu from '../Components/SidebarMenu'
 import Userbar from '../Components/Userbar'
 import cloud from  '../assets/Images/cloud-icon.svg'
-import Button from '../Components/Button'
 
 const ManageItems = () => {
   return (
     <>
-    <div className='mainarea flex'>
-      <SidebarMenu/>
-    <div className='w-full ml-[300px] bg-zinc-50 min-h-screen p-8'>
+    <div className='mainarea'>
+    <div>
     <Userbar/>
       <div className='bg-white rounded-10 mt-16 p-8'>
         <form>

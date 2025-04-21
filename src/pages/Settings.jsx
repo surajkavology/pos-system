@@ -1,5 +1,4 @@
 import React from 'react'
-import SidebarMenu from '../Components/SidebarMenu'
 import Userbar from '../Components/Userbar'
 
 const Settings = () => {
@@ -13,9 +12,8 @@ const Settings = () => {
   
   return (
     <>
-    <div className='mainarea flex'>
-      <SidebarMenu/>
-    <div className='w-full ml-[300px] bg-zinc-50 min-h-screen p-8'>
+    <div className='mainarea'>
+    <div>
       <Userbar/>
 
     <div className='p-8 bg-white shadow-2xl rounded-10 mt-12 min-h-185'>

@@ -1,9 +1,7 @@
 import React, { useState } from "react";
-import SidebarMenu from '../Components/SidebarMenu'
 import Userbar from '../Components/Userbar'
 import AboutInfoCardWrap from '../Components/AboutInfoCardWrap'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import UserCard from "../Components/UserCard";
 import ProductTable from "@/Components/ProductTable";
 
 
@@ -11,9 +9,8 @@ const Home = () => {
  
   return (
     <>
-    <div className='mainarea flex'>
-      <SidebarMenu/>
-    <div className='w-full ml-[300px] bg-zinc-50 min-h-screen p-8'>
+    <div className='mainarea'>
+      <div>
         <Userbar/>
         <AboutInfoCardWrap/>
           <Tabs defaultValue="account" className="w-full mt-14">
@@ -24,7 +21,9 @@ const Home = () => {
             <TabsContent value="account" className="mt-6">
               <ProductTable/>
             </TabsContent>
-            <TabsContent value="password" className="bg-white p-6 rounded-10 mt-6">Change your password here.</TabsContent>
+            <TabsContent value="password" className="bg-white p-6 rounded-10 mt-6">
+            <ProductTable/>
+            </TabsContent>
           </Tabs>
     </div>
     

@@ -1,64 +1,64 @@
-import React from 'react'
+import React, { useState } from 'react'
 import ProductImg from '../assets/Images/product.png'
 
 const ProductTable = () => {
 
-let productData = [
-  {
-    orderNumber:'#ORD130',
-    product: 'I Phone 15 Pro Max',
-    productImg : `${ProductImg}`,
-    productColor: '256GB, Gray',
-    price : '$1,199.00',
-    time: 'Thu, 23 May 2024'
-  },
-  {
-    orderNumber:'#ORD130',
-    product: 'I Phone 15 Pro Max',
-    productImg : `${ProductImg}`,
-    productColor: '256GB, Gray',
-    price : '$1,199.00',
-    time: 'Thu, 23 May 2024'
-  },
-  {
-    orderNumber:'#ORD130',
-    product: 'I Phone 15 Pro Max',
-    productImg : `${ProductImg}`,
-    productColor: '256GB, Gray',
-    price : '$1,199.00',
-    time: 'Thu, 23 May 2024'
-  },
-  {
-    orderNumber:'#ORD130',
-    product: 'I Phone 15 Pro Max',
-    productImg : `${ProductImg}`,
-    productColor: '256GB, Gray',
-    price : '$1,199.00',
-    time: 'Thu, 23 May 2024'
-  },
-  {
-    orderNumber:'#ORD130',
-    product: 'I Phone 15 Pro Max',
-    productImg : `${ProductImg}`,
-    productColor: '256GB, Gray',
-    price : '$1,199.00',
-    time: 'Thu, 23 May 2024'
-  },
-  {
-    orderNumber:'#ORD130',
-    product: 'I Phone 15 Pro Max',
-    productImg : `${ProductImg}`,
-    productColor: '256GB, Gray',
-    price : '$1,199.00',
-    time: 'Thu, 23 May 2024'
-  }
-]
+  const [productData, setProductData] = useState([
+    {
+      orderNumber: "#ORD130",
+      product: "iPhone 15 Pro Max",
+      productImg: ProductImg,
+      productColor: "256GB, Gray",
+      price: "$1,199.00",
+      time: "Thu, 23 May 2024",
+    },
+    {
+      orderNumber: "#ORD131",
+      product: "iPhone 15 Pro Max",
+      productImg: ProductImg,
+      productColor: "512GB, Silver",
+      price: "$1,299.00",
+      time: "Fri, 24 May 2024",
+    },
+    {
+      orderNumber: "#ORD131",
+      product: "iPhone 15 Pro Max",
+      productImg: ProductImg,
+      productColor: "512GB, Silver",
+      price: "$1,299.00",
+      time: "Fri, 24 May 2024",
+    },
+    {
+      orderNumber: "#ORD131",
+      product: "iPhone 15 Pro Max",
+      productImg: ProductImg,
+      productColor: "512GB, Silver",
+      price: "$1,299.00",
+      time: "Fri, 24 May 2024",
+    },
+    {
+      orderNumber: "#ORD131",
+      product: "iPhone 15 Pro Max",
+      productImg: ProductImg,
+      productColor: "512GB, Silver",
+      price: "$1,299.00",
+      time: "Fri, 24 May 2024",
+    },
+    {
+      orderNumber: "#ORD131",
+      product: "iPhone 15 Pro Max",
+      productImg: ProductImg,
+      productColor: "512GB, Silver",
+      price: "$1,299.00",
+      time: "Fri, 24 May 2024",
+    },
+  ]);
 
   return (
-    <div className="max-w-6xl mx-auto bg-white p-6 pb-20 shadow-lg rounded-lg">
+    <div className="bg-white p-6 pb-20 shadow-lg rounded-lg">
   {/* Wrapper for horizontal scrolling */}
   <div className="overflow-x-auto">
-    <table className="w-full border-collapse min-w-[600px] md:table">
+    <table className="w-full border-collapse min-w-[650px] md:table">
       {/* Table Header */}
       <thead>
         <tr className="bg-[#f8f8f8] text-theme-gray text-left text-base">
